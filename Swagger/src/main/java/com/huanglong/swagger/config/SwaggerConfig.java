@@ -20,6 +20,7 @@ import java.util.ArrayList;
 
 
 
+
 // 配置类
 @Configuration
 @EnableSwagger2   // 开启Swagger2
@@ -36,7 +37,7 @@ public class SwaggerConfig {
     @Bean
     public Docket groupRestApi() {
         return new Docket(DocumentationType.SWAGGER_2).
-                apiInfo(apinfo2()).
+                apiInfo(apinfo2()). // api的描述方法
                 groupName("用户模块API文档").
                 select().
                 apis(RequestHandlerSelectors.basePackage("com.huanglong.swagger.Ctrl.User")).build();
