@@ -19,6 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.ArrayList;
 
 
+
 @Configuration
 @EnableSwagger2   // 开启Swagger2
 public class SwaggerConfig {
@@ -34,7 +35,7 @@ public class SwaggerConfig {
     @Bean
     public Docket groupRestApi() {
         return new Docket(DocumentationType.SWAGGER_2).
-                apiInfo(apinfo2()).
+                apiInfo(apinfo2()). // api的描述方法
                 groupName("用户模块API文档").
                 select().
                 apis(RequestHandlerSelectors.basePackage("com.huanglong.swagger.Ctrl.User")).build();
