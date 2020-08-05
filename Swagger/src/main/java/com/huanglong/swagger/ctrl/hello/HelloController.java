@@ -34,6 +34,6 @@ import javax.servlet.http.HttpServletRequest;
  
     
     public void fun1() {
-    	System.out.println("测试代码 ");
+    	System.out.println("测试代码演示 ");
     }
 }
