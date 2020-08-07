@@ -31,5 +31,9 @@ import javax.servlet.http.HttpServletRequest;
     public String hello(HttpServletRequest request){
         return  "hello";
     }
-
+ 
+    
+    public void fun1() {
+    	System.out.println("测试代码演示黄龙测试");
+    }
 }
